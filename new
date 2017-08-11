@@ -1,0 +1,8 @@
+#!/bin/bash
+#一个命令新建一个名为test$1的空白文档
+filename=test"$1".sh
+touch $filename
+chmod u+x $filename
+gedit $filename
+#将该脚本重命名为new,sudo cp new /usr/bin  ;  chmod 755 usr/bin/new
+#试试在终端输入new 1,new 2...
