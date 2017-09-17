@@ -4,5 +4,8 @@ filename=test"$1".sh
 touch $filename
 chmod u+x $filename
 gedit $filename
-#将该脚本重命名为new,sudo cp new /usr/bin  ;  chmod 755 usr/bin/new
+#将该脚本重命名为new，并复制到/usr/bin目录下
+sudo cp new /usr/bin
+#给读写权限
+chmod 755 usr/bin/new
 #试试在终端输入new 1,new 2...
